@@ -89,7 +89,7 @@ export default function Home() {
         <div className="flex flex-col mt-8">
           [ contact ] <br />
 
-          dao [ at ] daofeng [dot] ca
+          hey [ at ] daofeng [dot] ca
 
         </div>
       

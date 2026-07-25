@@ -2,7 +2,11 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import {remark} from 'remark'
-import html from 'remark-html';
+// import html from 'remark-html';
+import remarkMath from "remark-math";
+import remarkRehype from "remark-rehype";
+import rehypeKatex from "rehype-katex";
+import rehypeStringify from "rehype-stringify";
 
 
 const writingDirectory = path.join(process.cwd(), "src/content/writing");
@@ -45,7 +49,12 @@ export async function getWritingPostsBySlug(
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const {data, content} = matter(fileContents);
 
-    const processedContent = await remark().use(html).process(content);
+    const processedContent = await remark()
+        .use(remarkMath)
+        .use(remarkRehype)
+        .use(rehypeKatex)
+        .use(rehypeStringify)
+        .process(content);
     const contentHtml = processedContent.toString();
 
     return {

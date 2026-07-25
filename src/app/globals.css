@@ -25,3 +25,10 @@ body {
   color: var(--foreground);
   font-family: var(--font-source-serif), Georgia, serif;
 }
+
+/* mobile overflow styling */
+.katex-display{
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+}
