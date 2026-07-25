@@ -99,6 +99,41 @@ export default function Home() {
           hey [ at ] daofeng [dot] ca
 
         </div>
+
+        <div className="mt-6 flex gap-4">
+          <br></br>
+          <a
+            href=""
+            target="_blank" //opens in new tab
+            rel="noopener noreferrer"
+            aria-label="github"
+            className="opacity-50 transition-opacity hover:opacity-80"
+          >
+            <img src="/icons/socials-github-dark.svg" className="h-5 w-5"/>
+          </a>
+
+          <a
+            href=""
+            target="_blank" //opens in new tab
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+            className="opacity-50 transition-opacity hover:opacity-80"
+          >
+            <img src="/icons/socials-linkedin.svg" className="h-5 w-5"/>
+          </a>
+
+          <a
+            href=""
+            target="_blank" //opens in new tab
+            rel="noopener noreferrer"
+            aria-label="twitter"
+            className="opacity-50 transition-opacity hover:opacity-80"
+          >
+            <img src="/icons/socials-x-dark.svg" className="h-5 w-5"/>
+          </a>
+
+
+        </div>
       
       </main>
 
