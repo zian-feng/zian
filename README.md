@@ -15,16 +15,6 @@ Vercel
 
 ***
 
-proj management
-- after mvp:
-    - create dev branch
-    - create test branch
-
-todo
-- add llm.txt & robots.txt
-- add latex support for writing
-- add article for ViSNR 
-
 
 
 
