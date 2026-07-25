@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -70,20 +71,26 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 w-full"> 
           <div className= "">
-            [ building ]
+            <center>[ building ]</center>
 
             <h1>projects</h1>
           </div>
           
           <div className= "">
-            [ projects ]
+            <center>[ projects ]</center>
           </div>
 
           <div className= "">
-            [ writing ]
+            <Link href="/writing" className="transition-colors hover:text-zinc-500">
+              <center>[ writing ]</center>
+            </Link>
           </div>
         
         </div>
+
+        <p className="mx-auto mt-4 text-center">
+            * * *
+          </p>
 
 
         <div className="flex flex-col mt-8">
