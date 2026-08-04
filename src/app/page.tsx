@@ -69,24 +69,37 @@ export default function Home() {
 
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 w-full"> 
+        <div className="w-full overflow-x-auto">
+        <div className="grid min-w-[720px] grid-cols-3"> 
           <div className= "">
             <center>[ building ]</center>
 
-            <h1>projects</h1>
+            <h1>project vv</h1>
+            <h1>secret taps</h1>
           </div>
           
           <div className= "">
-            <center>[ projects ]</center>
+            <center>[ projects ]</center> 
+            <h1>4c-auto</h1>
+            <h1>openssl</h1>
           </div>
 
           <div className= "">
             <Link href="/writing" className="transition-colors hover:text-zinc-500">
               <center>[ writing ]</center>
             </Link>
+            <h1>
+              <Link href="" className="transition-colors hover:text-zinc-500">
+                devlog 1
+              </Link>
+            </h1>
+            <h1>why do we use vv</h1>
           </div>
         
         </div>
+        </div>
+
+        <br></br>
 
         <p className="mx-auto mt-4 text-center">
             * * *
@@ -103,7 +116,7 @@ export default function Home() {
         <div className="mt-6 flex gap-4">
           <br></br>
           <a
-            href=""
+            href="https://github.com/zian-feng"
             target="_blank" //opens in new tab
             rel="noopener noreferrer"
             aria-label="github"
@@ -132,14 +145,27 @@ export default function Home() {
             <img src="/icons/socials-x-dark.svg" className="h-5 w-5"/>
           </a>
 
+          <a
+            href=""
+            target="_blank" //opens in new tab
+            rel="noopener noreferrer"
+            aria-label="bsky"
+            className="opacity-50 transition-opacity hover:opacity-80"
+          >
+            <img src="/icons/socials-bsky.svg" className="h-5 w-5"/>
+          </a>
+
 
         </div>
       
       </main>
 
-      {/* <footer>
-        <p> © Dao Feng</p>
-      </footer> */}
+      <footer>
+        <hr className="my-2 w-full border-zinc-300 dark:border-zinc-700"/>
+        
+        <p> © Dao Feng </p>
+        <br></br>
+      </footer>
 
     </div>
   );
