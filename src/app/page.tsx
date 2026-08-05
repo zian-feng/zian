@@ -7,14 +7,14 @@ export default function Home() {
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
 
         {/* // wrap this in a div and then maybe add other sections to the right of it */}
-        <Image
+        {/* <Image
         className="dark:opacity-85 mb-8"
         src = "/icons/FZAL1.png" // consider switching to svg
         alt="headshot"
         width={50}
         height={10}
         priority
-        />
+        /> */}
         
         <Image 
         className="dark:opacity-85"
