@@ -26,7 +26,7 @@ export default function Home() {
         />
 
         <div className="flex flex-col items-start gap-6 text-left">
-          <h1 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h1 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-[#E5E5E5]">
             Dao Feng
           </h1>
 
