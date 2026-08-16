@@ -18,11 +18,11 @@ export default function WritingPage(){
                         <Link 
                             key={post.slug}
                             href={`/writing/${post.slug}`}
-                            className="block transition-colors hover:text-zinc-500"
+                            className="block text-zinc-500 transition-colors hover:text-foreground"
                         >
                             <div className="flex items-start justify-between gap-6">
                                 <div>
-                                    <h2 className="mt-1 font-serif text-l font-semibold">
+                                    <h2 className="mt-1 font-serif text-l">
                                         {post.title}
                                     </h2>
 
@@ -32,7 +32,7 @@ export default function WritingPage(){
                                         </p>
                                     )} */}
                                 </div>       
-                                <time className="font-sans text-sm text-zinc-500">
+                                <time className="font-sans text-sm">
                                     {formatPostDate(post.date)}
                                 </time>
                             </div>

@@ -30,7 +30,7 @@ export default function Home() {
             Dao Feng
           </h1>
 
-          <div className="h-10"/>
+          <div className="h-4"/>
 
           <p>
             I'm a London-based Data Scientist @ AITIS and an AI Automations Engineer at 4C Labs.
