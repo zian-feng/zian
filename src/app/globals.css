@@ -26,6 +26,14 @@ body {
   font-family: var(--font-source-serif), Georgia, serif;
 }
 
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
 /* mobile overflow styling */
 .katex-display{
   overflow-x: auto;
