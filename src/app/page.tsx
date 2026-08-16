@@ -20,8 +20,8 @@ export default function Home() {
         className="dark:opacity-85"
         src = "/images/Headshot.jpg"
         alt="headshot"
-        width={100}
-        height={20}
+        width={102}
+        height={22}
         priority
         />
 
@@ -146,7 +146,7 @@ export default function Home() {
           </a>
 
           <a
-            href=""
+            href="https://bsky.app/profile/zianfeng.bsky.social"
             target="_blank" //opens in new tab
             rel="noopener noreferrer"
             aria-label="bsky"
