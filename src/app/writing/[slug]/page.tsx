@@ -38,8 +38,8 @@ export default async function WritingPostPage({params,}: writingPostPageProps){
     }
 
     return(
-        <main className="min-h-screen w-full bg-white text-foreground dark:bg-black">
-            <article className="mx-auto w-full max-w-3xl bg-white px-16 py-20 dark:bg-black">
+        <main className="min-h-screen w-full bg-white text-foreground dark:bg-[#0A0A0A]">
+            <article className="mx-auto w-full max-w-3xl bg-white px-16 py-20 dark:bg-[#0A0A0A]">
                 <Link
                     href="/writing"
                     className="font-mono text-sm text-zinc-500 transition-colors hover:text-foreground"

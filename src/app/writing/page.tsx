@@ -6,9 +6,9 @@ export default function WritingPage(){
     const posts = getAllWritingPosts();
     
     return(
-        <main className="min-h-screen w-full bg-white text-foreground dark:bg-black">
+        <main className="min-h-screen w-full bg-white text-foreground dark:bg-[#0A0A0A]">
             
-            <section className="mx-auto w-full max-w-3xl bg-white px-16 py-20 dark:bg-black">
+            <section className="mx-auto w-full max-w-3xl bg-white px-16 py-20 dark:bg-[#0A0A0A]">
                 <h1 className="font-news text-2xl font-semibold tracking-tight">
                     Writing
                 </h1>

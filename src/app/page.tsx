@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-white font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-start justify-between py-32 px-16 bg-white dark:bg-black">
+    <div className="flex flex-col flex-1 items-center justify-center bg-white font-sans dark:bg-[#0A0A0A]">
+      <main className="flex flex-1 w-full max-w-3xl flex-col items-start justify-between py-32 px-16 bg-white dark:bg-[#0A0A0A]">
 
         {/* // wrap this in a div and then maybe add other sections to the right of it */}
         <Image
@@ -69,31 +69,48 @@ export default function Home() {
 
         </div>
 
-        <div className="w-full overflow-x-auto">
+        <div className="w-full overflow-x-auto 
+        [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
+        [-webkit-mask-image:linear-gradient(to_right,transparent,black_2rem,black_calc(100%_-_2rem),transparent)]
+        [mask-image:linear-gradient(to_right,transparent,black_2rem,black_calc(100%_-_2rem),transparent)]
+        ">
         <div className="grid min-w-[720px] grid-cols-3"> 
           <div className= "">
             <center>[ building ]</center>
 
-            <h1>project vv</h1>
-            <h1>secret taps</h1>
+              <center>
+                <br/>
+                <h1>vv</h1>
+                <h1>ark</h1>
+                <h1>mks</h1>
+              </center>
           </div>
           
           <div className= "">
             <center>[ projects ]</center> 
-            <h1>4c-auto</h1>
-            <h1>openssl</h1>
+            <center>
+              <br/>
+              <h1>4c-auto</h1>
+              <h1>visnr</h1>
+              <h1>xra</h1>
+            </center>
           </div>
 
           <div className= "">
             <Link href="/writing" className="transition-colors hover:text-zinc-500">
               <center>[ writing ]</center>
             </Link>
-            <h1>
-              <Link href="" className="transition-colors hover:text-zinc-500">
-                devlog 1
-              </Link>
-            </h1>
-            <h1>why do we use vv</h1>
+            
+            <center>
+              <br/>
+              <h1>
+                <Link href="" className="transition-colors hover:text-zinc-500">
+                  devlog 1
+                </Link>
+              </h1>
+              <h1>why do we use vv</h1>
+            </center>
+          
           </div>
         
         </div>
