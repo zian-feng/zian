@@ -130,58 +130,54 @@ export default function Home() {
 
         </div>
 
-        <div className="mt-6 flex gap-4">
-          <br></br>
-          <a
-            href="https://github.com/zian-feng"
-            target="_blank" //opens in new tab
-            rel="noopener noreferrer"
-            aria-label="github"
-            className="opacity-50 transition-opacity hover:opacity-80"
-          >
-            <img src="/icons/socials-github-dark.svg" className="h-5 w-5"/>
-          </a>
-
-          <a
-            href=""
-            target="_blank" //opens in new tab
-            rel="noopener noreferrer"
-            aria-label="linkedin"
-            className="opacity-50 transition-opacity hover:opacity-80"
-          >
-            <img src="/icons/socials-linkedin.svg" className="h-5 w-5"/>
-          </a>
-
-          <a
-            href=""
-            target="_blank" //opens in new tab
-            rel="noopener noreferrer"
-            aria-label="twitter"
-            className="opacity-50 transition-opacity hover:opacity-80"
-          >
-            <img src="/icons/socials-x-dark.svg" className="h-5 w-5"/>
-          </a>
-
-          <a
-            href="https://bsky.app/profile/zianfeng.bsky.social"
-            target="_blank" //opens in new tab
-            rel="noopener noreferrer"
-            aria-label="bsky"
-            className="opacity-50 transition-opacity hover:opacity-80"
-          >
-            <img src="/icons/socials-bsky.svg" className="h-5 w-5"/>
-          </a>
-
-
-        </div>
-      
       </main>
 
-      <footer>
-        <hr className="my-2 w-full border-zinc-300 dark:border-zinc-700"/>
-        
-        <p> © Dao Feng </p>
-        <br></br>
+      <footer className="w-full max-w-3xl px-16 pb-8">
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <p className="opacity-50">© 2026 Dao Feng</p>
+
+          <div className="flex items-center gap-4">
+            <a
+              href="https://github.com/zian-feng"
+              target="_blank" //opens in new tab
+              rel="noopener noreferrer"
+              aria-label="github"
+              className="opacity-50 transition-opacity hover:opacity-80"
+            >
+              <img src="/icons/socials-github-dark.svg" className="h-5 w-5"/>
+            </a>
+
+            <a
+              href=""
+              target="_blank" //opens in new tab
+              rel="noopener noreferrer"
+              aria-label="linkedin"
+              className="opacity-50 transition-opacity hover:opacity-80"
+            >
+              <img src="/icons/socials-linkedin.svg" className="h-5 w-5"/>
+            </a>
+
+            <a
+              href=""
+              target="_blank" //opens in new tab
+              rel="noopener noreferrer"
+              aria-label="twitter"
+              className="opacity-50 transition-opacity hover:opacity-80"
+            >
+              <img src="/icons/socials-x-dark.svg" className="h-5 w-5"/>
+            </a>
+
+            <a
+              href="https://bsky.app/profile/zianfeng.bsky.social"
+              target="_blank" //opens in new tab
+              rel="noopener noreferrer"
+              aria-label="bsky"
+              className="opacity-50 transition-opacity hover:opacity-80"
+            >
+              <img src="/icons/socials-bsky.svg" className="h-5 w-5"/>
+            </a>
+          </div>
+        </div>
       </footer>
 
     </div>
