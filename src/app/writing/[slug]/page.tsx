@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link"
 import { notFound } from "next/navigation";
-import { getWritingPostsBySlug, getWritingSlugs, WritingPostPreview, formatPostDate} from "@/lib/writing";
+import { getWritingPostsBySlug, getWritingSlugs, formatPostDate} from "@/lib/writing";
 
 type writingPostPageProps = {
     params: Promise<{slug: string;}>;
@@ -39,12 +40,13 @@ export default async function WritingPostPage({params,}: writingPostPageProps){
 
     return(
         <main className="min-h-screen w-full bg-white text-foreground dark:bg-[#0A0A0A]">
-            <article className="mx-auto w-full max-w-3xl bg-white px-16 py-20 dark:bg-[#0A0A0A]">
+            <article className="relative mx-auto w-full max-w-3xl bg-white px-16 pt-16 pb-20 dark:bg-[#0A0A0A]">
                 <Link
                     href="/writing"
-                    className="font-mono text-sm text-zinc-500 transition-colors hover:text-foreground"
+                    className="mb-4 inline-flex items-center gap-1 text-sm italic text-zinc-500 transition-colors hover:text-foreground lg:absolute lg:right-[calc(100%+3rem)] lg:top-20 lg:mb-0"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFFFFF" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path></svg>
+                    <Image src="/icons/chevron-left.svg" alt="" width={16} height={16} className="dark:invert" />
+                    writing
                 </Link>
                 <h1 className="mt-4 font-serif text-xl font-semibold tracking-tight">
                     {post.title}
