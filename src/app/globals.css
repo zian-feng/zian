@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #3f3c3c;
+  --foreground: #111111;
 }
 
 @theme inline {
@@ -13,11 +13,9 @@
   --font-news: var(--font-newsreader-serif);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0A0A0A;
-    --foreground: #E5E5E5;
-  }
+html.dark {
+  --background: #0A0A0A;
+  --foreground: #E5E5E5;
 }
 
 body {

@@ -144,7 +144,7 @@ export default function Home() {
               aria-label="github"
               className="opacity-50 transition-opacity hover:opacity-80"
             >
-              <img src="/icons/socials-github-dark.svg" className="h-5 w-5"/>
+              <img src="/icons/socials-github-dark.svg" className="h-5 w-5 invert dark:invert-0"/>
             </a>
 
             <a
@@ -154,7 +154,7 @@ export default function Home() {
               aria-label="linkedin"
               className="opacity-50 transition-opacity hover:opacity-80"
             >
-              <img src="/icons/socials-linkedin.svg" className="h-5 w-5"/>
+              <img src="/icons/socials-linkedin.svg" className="h-5 w-5 invert dark:invert-0"/>
             </a>
 
             <a
@@ -164,7 +164,7 @@ export default function Home() {
               aria-label="twitter"
               className="opacity-50 transition-opacity hover:opacity-80"
             >
-              <img src="/icons/socials-x-dark.svg" className="h-5 w-5"/>
+              <img src="/icons/socials-x-dark.svg" className="h-5 w-5 invert dark:invert-0"/>
             </a>
 
             <a
@@ -174,7 +174,7 @@ export default function Home() {
               aria-label="bsky"
               className="opacity-50 transition-opacity hover:opacity-80"
             >
-              <img src="/icons/socials-bsky.svg" className="h-5 w-5"/>
+              <img src="/icons/socials-bsky.svg" className="h-5 w-5 invert dark:invert-0"/>
             </a>
           </div>
         </div>

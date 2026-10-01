@@ -28,9 +28,9 @@ export default function WritingPage(){
                             href={`/writing/${post.slug}`}
                             className="block text-zinc-500 transition-colors hover:text-foreground"
                         >
-                            <div className="flex items-start justify-between gap-6">
+                            <div className="flex items-baseline justify-between gap-6">
                                 <div>
-                                    <h2 className="mt-1 font-serif text-l font-normal">
+                                    <h2 className="font-serif text-l font-normal">
                                         {post.title}
                                     </h2>
 
