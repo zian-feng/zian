@@ -1,7 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+  const horizontalSectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const section = horizontalSectionRef.current;
+
+    if (section) {
+      section.scrollLeft = (section.scrollWidth - section.clientWidth) / 2;
+    }
+  }, []);
+
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-white font-sans dark:bg-[#0A0A0A]">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-start justify-between py-32 px-16 bg-white dark:bg-[#0A0A0A]">
@@ -40,7 +53,7 @@ export default function Home() {
             Previously, 
 
             
-            I have worked on financial data pipelines @ Velo.
+            I have worked on financial data pipelines @ <a href="https://velominati.ai"> Velo</a>.
             Research Consultant at <a href="https://emeraldhealthclinic.co.uk"> Emerald Health </a>,
             
             and a Frontend Engineer @ Huzzle.
@@ -69,7 +82,7 @@ export default function Home() {
 
         </div>
 
-        <div className="w-full overflow-x-auto 
+        <div ref={horizontalSectionRef} className="w-full overflow-x-auto
         [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
         [-webkit-mask-image:linear-gradient(to_right,transparent,black_2rem,black_calc(100%_-_2rem),transparent)]
         [mask-image:linear-gradient(to_right,transparent,black_2rem,black_calc(100%_-_2rem),transparent)]
