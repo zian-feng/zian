@@ -39,7 +39,7 @@ export function getAllWritingPosts(): WritingPostPreview[]{
                 tags: Array.isArray(data.tags) ? data.tags: [],
             };
         });
-    return posts.sort((a, b) => b.date.localeCompare(a.date));
+    return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export async function getWritingPostsBySlug(
@@ -83,4 +83,12 @@ export function formatPostDate(date: string){
     const year = new Intl.DateTimeFormat('en-US', {year:'numeric'}).format(parsedDate);
 
     return `${month}. ${day}, ${year}`;
+}
+
+export function formatPostMonthDay(date: string) {
+    const d = new Date(date);
+    if (isNaN(d.getTime())) return "";
+    return new Intl.DateTimeFormat("en-US", {
+        month: "2-digit", day: "2-digit", timeZone: "UTC",
+    }).format(d);
 }
