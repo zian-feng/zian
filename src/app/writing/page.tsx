@@ -45,11 +45,13 @@ export default function WritingPage(){
                             <span className="pointer-events-none absolute left-0 top-3 select-none font-sans text-sm leading-6 tabular-nums text-zinc-500">
                                 {year}
                             </span>
-                            {posts.map((post) => (
+                            {posts.map((post, index) => (
                                 <Link
                                     key={post.slug}
                                     href={`/writing/${post.slug}`}
-                                    className="ml-16 md:ml-[25%] flex items-center justify-between gap-3 md:gap-4 border-t border-zinc-200 py-3 first:border-t-transparent dark:border-zinc-800 transition-opacity duration-150 group-hover/toc:[&:not(:hover)]:opacity-40"
+                                    className={`ml-16 md:ml-[25%] flex items-center justify-between gap-3 md:gap-4 border-t py-3 transition-opacity duration-150 group-hover/toc:[&:not(:hover)]:opacity-40 ${
+                                        index === 0 ? "border-t-transparent" : "border-zinc-200 dark:border-zinc-800"
+                                    }`}
                                 >
                                     <h2 className="font-serif text-base font-normal">{post.title}</h2>
                                     <time dateTime={post.date} className="shrink-0 md:mx-2 font-sans text-sm tabular-nums text-zinc-500">
